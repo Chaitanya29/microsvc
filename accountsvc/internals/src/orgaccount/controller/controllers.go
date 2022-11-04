@@ -27,5 +27,6 @@ func ConGetOrganization() ([]model.GetAccount, error) {
 		}
 		accounts = append(accounts, acct)
 	}
+	rows.Close()
 	return accounts, nil
 }
